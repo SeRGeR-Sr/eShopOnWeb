@@ -1,13 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
-
   <PropertyGroup>
-    <!-- Target .NET 8 explicitly -->
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-
-    <!-- Disable trimming/linker to avoid NETSDK1124 -->
-    <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,5 +31,4 @@
       <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-
 </Project>
