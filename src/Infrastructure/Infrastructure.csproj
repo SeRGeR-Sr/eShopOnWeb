@@ -7,20 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- EF Core – versions are controlled centrally in Directory.Packages.props -->
+    <!-- EF Core: versions come from Directory.Packages.props -->
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
 
-    <!-- Spec pattern with EF -->
+    <!-- Spec pattern + Identity + IdentityModel -->
     <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" />
-
-    <!-- ASP.NET Core Identity with EF -->
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
-
-    <!-- For IdentityTokenClaimService (IdentityModel types) -->
     <PackageReference Include="IdentityModel" />
   </ItemGroup>
 
